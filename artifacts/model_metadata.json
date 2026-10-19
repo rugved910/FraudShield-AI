@@ -1,0 +1,72 @@
+{
+  "model_version": "1.0.0",
+  "model_name": "random_forest",
+  "trained_at_utc": "2026-10-19T14:04:30.718121+00:00",
+  "data_source": "kaggle:https://www.kaggle.com/datasets/mlg-ulb/creditcardfraud",
+  "is_demo": false,
+  "feature_columns": [
+    "Time",
+    "V1",
+    "V2",
+    "V3",
+    "V4",
+    "V5",
+    "V6",
+    "V7",
+    "V8",
+    "V9",
+    "V10",
+    "V11",
+    "V12",
+    "V13",
+    "V14",
+    "V15",
+    "V16",
+    "V17",
+    "V18",
+    "V19",
+    "V20",
+    "V21",
+    "V22",
+    "V23",
+    "V24",
+    "V25",
+    "V26",
+    "V27",
+    "V28",
+    "Amount"
+  ],
+  "target_column": "Class",
+  "decision_threshold": 0.2997114012701344,
+  "threshold_tuning": {
+    "method": "maximise F1 on validation set (ties broken toward higher recall)",
+    "tuned_on": "validation",
+    "validation_metrics_at_tuned_threshold": {
+      "threshold": 0.2997114012701344,
+      "precision": 0.9,
+      "recall": 0.8617021276595744,
+      "f1": 0.8804347826086957,
+      "roc_auc": 0.9605689482862032,
+      "pr_auc": 0.875246852847619,
+      "true_negatives": 56642,
+      "false_positives": 9,
+      "false_negatives": 13,
+      "true_positives": 81
+    }
+  },
+  "preprocessing": {
+    "time_amount": "StandardScaler fitted on training data only",
+    "v_features": "V1..V28 are pre-scaled PCA components; passed through unchanged"
+  },
+  "risk_categories": {
+    "low": "probability < 0.5 * threshold",
+    "medium": "0.5 * threshold <= probability < threshold",
+    "high": "probability >= threshold"
+  },
+  "split_sizes": {
+    "train": 170235,
+    "validation": 56745,
+    "test": 56746
+  },
+  "random_seed": 42
+}

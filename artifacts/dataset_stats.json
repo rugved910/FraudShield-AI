@@ -1,0 +1,17 @@
+{
+  "data_source": "kaggle:https://www.kaggle.com/datasets/mlg-ulb/creditcardfraud",
+  "total_transactions": 283726,
+  "fraud_cases": 473,
+  "legitimate_cases": 283253,
+  "fraud_percentage": 0.1667,
+  "duplicate_rows_removed": 1081,
+  "missing_values": 0,
+  "amount_stats": {
+    "mean": 88.47,
+    "median": 22.0,
+    "max": 25691.16,
+    "fraud_mean": 123.87,
+    "legit_mean": 88.41
+  },
+  "time_span_hours": 48.0
+}

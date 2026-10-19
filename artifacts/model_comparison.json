@@ -1,0 +1,95 @@
+{
+  "selection_metric": "validation_pr_auc",
+  "selection_reason": "Accuracy is misleading with ~0.17 % fraud. PR-AUC measures quality of the rare-class ranking and is the primary selection criterion; recall is prioritised over precision at the tie-break stage.",
+  "selected_model": "random_forest",
+  "decision_threshold": 0.2997114012701344,
+  "models": {
+    "logistic_regression": {
+      "validation": {
+        "threshold": 0.5,
+        "precision": 0.05383153894870171,
+        "recall": 0.9042553191489362,
+        "f1": 0.10161386730424388,
+        "roc_auc": 0.978839080792174,
+        "pr_auc": 0.7868262715721102,
+        "true_negatives": 55157,
+        "false_positives": 1494,
+        "false_negatives": 9,
+        "true_positives": 85
+      },
+      "train_seconds": 2.4
+    },
+    "random_forest": {
+      "validation": {
+        "threshold": 0.5,
+        "precision": 0.9176470588235294,
+        "recall": 0.8297872340425532,
+        "f1": 0.8715083798882681,
+        "roc_auc": 0.9605689482862032,
+        "pr_auc": 0.875246852847619,
+        "true_negatives": 56644,
+        "false_positives": 7,
+        "false_negatives": 16,
+        "true_positives": 78
+      },
+      "train_seconds": 184.3,
+      "validation_tuned": {
+        "threshold": 0.2997114012701344,
+        "precision": 0.9,
+        "recall": 0.8617021276595744,
+        "f1": 0.8804347826086957,
+        "roc_auc": 0.9605689482862032,
+        "pr_auc": 0.875246852847619,
+        "true_negatives": 56642,
+        "false_positives": 9,
+        "false_negatives": 13,
+        "true_positives": 81
+      }
+    },
+    "balanced_random_forest": {
+      "validation": {
+        "threshold": 0.5,
+        "precision": 0.05105105105105105,
+        "recall": 0.9042553191489362,
+        "f1": 0.09664582148948266,
+        "roc_auc": 0.9695887135755054,
+        "pr_auc": 0.7781263654504076,
+        "true_negatives": 55071,
+        "false_positives": 1580,
+        "false_negatives": 9,
+        "true_positives": 85
+      },
+      "train_seconds": 14.2
+    }
+  },
+  "test_metrics_selected_model": {
+    "threshold": 0.2997114012701344,
+    "precision": 0.9342105263157895,
+    "recall": 0.7473684210526316,
+    "f1": 0.8304093567251462,
+    "roc_auc": 0.9437425269586917,
+    "pr_auc": 0.8110454782137528,
+    "true_negatives": 56646,
+    "false_positives": 5,
+    "false_negatives": 24,
+    "true_positives": 71
+  },
+  "test_metrics_selected_model_at_threshold_0_5": {
+    "threshold": 0.5,
+    "precision": 0.9710144927536232,
+    "recall": 0.7052631578947368,
+    "f1": 0.8170731707317073,
+    "roc_auc": 0.9437425269586917,
+    "pr_auc": 0.8110454782137528,
+    "true_negatives": 56649,
+    "false_positives": 2,
+    "false_negatives": 28,
+    "true_positives": 67
+  },
+  "test_risk_distribution": {
+    "low": 56659,
+    "medium": 11,
+    "high": 76
+  },
+  "total_training_seconds": 208.9
+}

@@ -1,0 +1,38 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    @apply bg-navy-950 text-slate-200 antialiased;
+  }
+  body {
+    @apply min-h-screen;
+  }
+  /* Accessible focus rings on the dark background */
+  :focus-visible {
+    outline: 2px solid theme("colors.signal.blue");
+    outline-offset: 2px;
+  }
+}
+
+@layer components {
+  .panel {
+    @apply rounded-lg border border-navy-700 bg-navy-900 p-4 shadow-sm;
+  }
+  .panel-title {
+    @apply text-sm font-semibold uppercase tracking-wide text-slate-400;
+  }
+  .btn-primary {
+    @apply inline-flex items-center justify-center gap-2 rounded-md bg-signal-blue px-4 py-2 text-sm font-semibold text-navy-950 transition-colors hover:brightness-110 disabled:cursor-not-allowed disabled:opacity-50;
+  }
+  .btn-secondary {
+    @apply inline-flex items-center justify-center gap-2 rounded-md border border-navy-600 bg-navy-800 px-4 py-2 text-sm font-medium text-slate-200 transition-colors hover:border-signal-blue hover:text-signal-blue disabled:cursor-not-allowed disabled:opacity-50;
+  }
+  .input-label {
+    @apply mb-1 block text-xs font-medium text-slate-400;
+  }
+  .input-field {
+    @apply w-full rounded-md border border-navy-600 bg-navy-850 px-2.5 py-1.5 font-mono text-sm text-slate-100 placeholder-slate-600 focus:border-signal-blue focus:outline-none;
+  }
+}

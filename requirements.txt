@@ -1,0 +1,26 @@
+# FraudShield AI — Python dependencies (tested with Python 3.10)
+# Data processing
+pandas==2.3.0
+numpy==1.26.4
+
+# Machine learning
+scikit-learn==1.7.0
+imbalanced-learn==0.14.2
+joblib==1.5.1
+
+# Analysis plots
+matplotlib==3.10.3
+seaborn==0.13.2
+
+# Backend API
+fastapi==0.141.1
+uvicorn==0.53.0
+pydantic==2.13.5
+python-multipart==0.0.20
+
+# Testing
+pytest==9.1.1
+httpx==0.28.1
+
+# Optional: only needed to download the dataset with the Kaggle CLI
+# kaggle==1.7.4.5

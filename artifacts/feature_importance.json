@@ -1,0 +1,127 @@
+{
+  "model": "random_forest",
+  "importance_type": "mean_decrease_in_impurity",
+  "note": "MDI = how much the forest relies on a feature across trees (mean decrease in impurity). V1..V28 are anonymised PCA components \u2014 they cannot be interpreted as real-world attributes such as merchant or location. Importance shows statistical reliance, not causation.",
+  "features": [
+    {
+      "feature": "V15",
+      "importance": 0.18409694575443317
+    },
+    {
+      "feature": "V13",
+      "importance": 0.11757972240501997
+    },
+    {
+      "feature": "V5",
+      "importance": 0.11087652244423987
+    },
+    {
+      "feature": "V11",
+      "importance": 0.09497860267519206
+    },
+    {
+      "feature": "V18",
+      "importance": 0.08774473068324395
+    },
+    {
+      "feature": "V12",
+      "importance": 0.08062335935444716
+    },
+    {
+      "feature": "V4",
+      "importance": 0.059198922879883965
+    },
+    {
+      "feature": "V17",
+      "importance": 0.033831071932799314
+    },
+    {
+      "feature": "V8",
+      "importance": 0.024823530519514296
+    },
+    {
+      "feature": "V3",
+      "importance": 0.02383496469753602
+    },
+    {
+      "feature": "V19",
+      "importance": 0.01667855602234025
+    },
+    {
+      "feature": "V20",
+      "importance": 0.014137203884321652
+    },
+    {
+      "feature": "V9",
+      "importance": 0.013796536474703665
+    },
+    {
+      "feature": "V22",
+      "importance": 0.013602683656850176
+    },
+    {
+      "feature": "V10",
+      "importance": 0.011883818713978837
+    },
+    {
+      "feature": "V28",
+      "importance": 0.011189075708380423
+    },
+    {
+      "feature": "V7",
+      "importance": 0.010213256201248468
+    },
+    {
+      "feature": "V21",
+      "importance": 0.010098101236268356
+    },
+    {
+      "feature": "V1",
+      "importance": 0.009228225777554522
+    },
+    {
+      "feature": "Amount",
+      "importance": 0.008965583571437093
+    },
+    {
+      "feature": "V6",
+      "importance": 0.008956492900953001
+    },
+    {
+      "feature": "V2",
+      "importance": 0.007592927255994442
+    },
+    {
+      "feature": "V23",
+      "importance": 0.007418439518599872
+    },
+    {
+      "feature": "V27",
+      "importance": 0.006879629905696658
+    },
+    {
+      "feature": "V16",
+      "importance": 0.00625300106439945
+    },
+    {
+      "feature": "V14",
+      "importance": 0.006006741330414056
+    },
+    {
+      "feature": "V26",
+      "importance": 0.0056195618981435234
+    },
+    {
+      "feature": "V25",
+      "importance": 0.005277274877291388
+    },
+    {
+      "feature": "V24",
+      "importance": 0.004669773377940918
+    },
+    {
+      "feature": "Time",
+      "importance": 0.003944743277173368
+    }
+  ]
+}
